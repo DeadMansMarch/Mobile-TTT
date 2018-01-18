@@ -11,7 +11,9 @@ import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
+    static var OAI = TicTacAI.init(forBoard: TicTacToeBoard(), withPlayer: 1)
+    static var XAI = TicTacAI.init(forBoard: TicTacToeBoard(), withPlayer: -1)
     var window: UIWindow?
 
 
